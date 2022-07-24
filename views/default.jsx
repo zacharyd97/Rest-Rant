@@ -28,4 +28,4 @@ function Def (html) {
         </html>
     )
 }
-export default Def
+module.exports = Def
