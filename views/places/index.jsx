@@ -1,5 +1,5 @@
 const React = require('react')
-//const def = require('./default')
+const def = require('../default')
 
 function index (data) {
     let placesFormatted = data.places.map((places) => {
