@@ -22,12 +22,12 @@ function index (data) {
       })
       
     return (
-        <def>
+        <Def>
             <main>
                 <h1> PLACES INDEX PAGE</h1>
                 {placesFormatted}
             </main>
-        </def>
+        </Def>
     )
 }
 
