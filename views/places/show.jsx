@@ -52,7 +52,7 @@ function show (data) {
             </div>   
             <h2>Comments</h2>
             {comments}  
-            <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+            <form method="POST" action={`/places/${data.place.id}/comment`}>
             <div>
               <label htmlFor="author">Author</label>
               <input className="form-control" id="author" name="author" value={data.place.comments.author} required />
