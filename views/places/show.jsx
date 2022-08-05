@@ -52,6 +52,25 @@ function show (data) {
             </div>   
             <h2>Comments</h2>
             {comments}  
+            <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+            <div>
+              <label htmlFor="author">Author</label>
+              <input className="form-control" id="author" name="author" value={data.place.comments.author} required />
+            </div>
+            <select name='rant' id='rant' defaultValue={data.place.comments.rant}>
+              <option value={data.place.comments.rant}>True</option>
+              <option value={data.place.comments.rant}>False</option>
+            </select>
+            <div>
+              <label htmlFor="stars">Stars</label>
+              <input className="form-control" id="stars" name="stars" value={data.place.comments.stars} required />
+            </div>
+            <div>
+              <label htmlFor="content">content</label>
+              <input className="form-control" id="content" name="content" value={data.place.comments.content} required />
+            </div>
+            <input type="submit"/>
+            </form>
           </main>
         </Def>
     )
