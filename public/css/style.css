@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(77, 175, 236);
   text-align: center;
 }
 
@@ -10,34 +10,50 @@ main {
 }
 
 nav {
-  background-color: cornflowerblue;
+  background-color: rgb(77, 175, 236);
   padding: 10px;
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 25px;
-}
-
 nav a {
   color: white;
   font-size: 1.5em;
 }
-
 nav a:hover {
   color: pink;
   text-decoration: none;
 }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+nav li {
+  box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.413);
+  display: inline;
+  margin-right: 25px;
+  list-style-type: none;
+}
+
 h1 {
   text-align: center;
-  color: cornflowerblue;
+  color: rgb(77, 175, 236);
 }
+
 .pic {
   width: 400px;
   height: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: aqua;
+  border-radius: 5px;
 }
+
+#footer {
+  background-color: rgb(63, 60, 60);
+  height: 20vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  left: 40px;
+}
+#footer div {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

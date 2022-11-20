@@ -1,0 +1,60 @@
+@import 'config';
+@import 'mixin';
+
+body {
+    background-color: $bg-color;
+    text-align: center;
+  }
+  
+  main {
+    margin-right: $margin;
+    margin-left: $margin;
+    background-color: white;
+  }
+  
+  nav {
+    background-color: $bg-color;
+    padding: 10px;
+    
+    a {
+        color: white;
+        font-size: 1.5em;
+
+            &:hover {
+                color: pink;
+                text-decoration: none;
+          }
+      }
+    ul {
+        list-style-type: none;
+        margin: 0;
+      }
+      li { 
+        @include shadow;
+        display: inline;
+        margin-right: 25px;
+        list-style-type: none;
+      }
+  }
+  
+  h1 {
+    text-align: center;
+    color: $bg-color;
+  }
+  .pic {
+    width: 400px;
+    height: auto;
+    @include border;
+  }
+
+#footer {
+  background-color: rgb(63, 60, 60);
+  height: 20vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  left: 40px;
+  div{
+    color: white;
+  }
+}

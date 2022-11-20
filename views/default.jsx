@@ -24,6 +24,12 @@ function Def (html) {
             </nav>
                 {html.children}
             </body>
+            <footer id='footer'>
+                <div>
+                    <h5>Made by Zachary Dowell</h5>
+                    <p>"Lorem ipsum dolor sit amet"</p>
+                </div>
+            </footer>
         </html>
     )
 }
